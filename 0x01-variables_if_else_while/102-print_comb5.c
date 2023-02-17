@@ -20,6 +20,8 @@ int main(void)
 						continue;
 					if (i > k)
 						continue;
+					if (i == k && j > l)
+						continue;
 					putchar(i);
 					putchar(j);
 					putchar(' ');
