@@ -10,7 +10,7 @@ int main(void)
 
 	for (i = 48; i <= 55; i++)
 	{
-		for (j = 49; j<= 56; j++)
+		for (j = 49; j <= 56; j++)
 		{
 			for (k = 50; k <= 57; k++)
 			{
