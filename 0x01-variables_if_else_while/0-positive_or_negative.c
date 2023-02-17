@@ -1,8 +1,10 @@
 #include <stdlib.h>
 #include <time.h>
-/* more headers goes there */
-
-/* betty style doc for function main goes there */
+/**
+* main - Entry point
+*
+* Return: always 0
+*/
 int main(void)
 {
 	int n;
@@ -10,10 +12,10 @@ int main(void)
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	if (n > 0)
-		printf("is positive");
+		printf(%d, "is positive");
 	else if (n == 0)
-		printf("is zero");
+		printf(%d, "is zero");
 	else
-		printf("is negative");
+		printf(%d, "is negative");
 	return (0);
 }
