@@ -18,6 +18,8 @@ void times_table(void)
 			}
 			else
 				_putchar(p + '0');
+			if (i == 9 && j == 9)
+				continue;
 			_putchar(',');
 			_putchar(' ');
 		}
