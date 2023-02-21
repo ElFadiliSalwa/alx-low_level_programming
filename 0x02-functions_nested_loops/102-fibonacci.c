@@ -4,7 +4,7 @@
  *
  * Return: Always 0
  */
-int main (void)
+int main(void)
 {
 	int i;
 	long int j = 1, k = 2;
