@@ -12,11 +12,9 @@ void times_table(void)
 		{
 			p = i * j;
 			if (p >= 10)
-			
 				_putchar(p / 10 + '0');
-				_putchar(p % 10 + '0');
-			
-			else
+			_putchar(p % 10 + '0');
+			if (p < 9)
 				_putchar(p + '0');
 			if (j == 9)
 				continue;
