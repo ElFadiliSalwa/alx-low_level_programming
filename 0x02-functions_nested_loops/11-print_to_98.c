@@ -5,7 +5,7 @@
  */
 void print_to_98(int n)
 {
-	int i;
+	int i, ten;
 
 	if (n == 98)
 	{
