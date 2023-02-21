@@ -5,12 +5,14 @@
  */
 void print_to_98(int n)
 {
-	int i, ten;
+	int i, one, ten, hundred ;
 
 	if (n == 98)
 	{
-		_putchar(n / 10 + '0');
-		_putchar(n % 10 + '0');
+		one = n % 10;
+		ten = n / 10;
+		_putchar(ten + '0');
+		_putchar(one + '0');
 	}
 	if (n < 98)
 	{
@@ -20,8 +22,10 @@ void print_to_98(int n)
 				_putchar(i + '0');
 			else
 			{
-				_putchar(i / 10 + '0');
-				_putchar(i % 10 + '0');
+				one = i % 10;
+				ten = i / 10;
+				_putchar(ten + '0');
+				_putchar(one + '0');
 			}
 			if (i != 98)
 			{
@@ -38,10 +42,12 @@ void print_to_98(int n)
 				_putchar(i + '0');
 			else if (i < 100)
 			{
+				one = i % 10;
 				ten = (i % 100) / 10;
-				_putchar(i / 100 + '0');
+				hundred = i / 100;
+				_putchar(hundred + '0');
 				_putchar(ten + '0');
-				_putchar(i % 10 + '0');
+				_putchar(one + '0');
 			}
 			if (i != 98)
 			{
