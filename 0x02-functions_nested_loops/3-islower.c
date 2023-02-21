@@ -1,9 +1,9 @@
 #include "main.h"
 #include <ctype.h>
 /**
- * _islower - checks for lowercase character c given in parameter
+ * _islower - checks if the character 'c' given in parameter is in lowercase
  * 
- * Return: 1 if lowercase, else 0
+ * Return:1 or 0
  */
 int _islower(int c)
 {
