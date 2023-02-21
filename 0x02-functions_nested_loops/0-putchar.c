@@ -1,11 +1,14 @@
-#include<stdio.h>
-/**
-* main - Entry point
-*
-* Return: always 0
-*/
+#include "main.h"
+
 int main(void)
 {
-	puts("_putchar");
+	_putchar('_');
+	_putchr('p');
+	_putchar('u');
+	_putchar('t');
+	_putchar('c');
+	_putchar('h');
+	_putchar('a');
+	_putchar('r');
 	return (0);
 }
