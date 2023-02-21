@@ -9,7 +9,7 @@ int main(void)
 	unsigned long int i, j = 1, k = 2, l, m, n, o;
 
 	printf("%lu", j);
-	for (i= 1; i < 91; i++)
+	for (i = 1; i < 91; i++)
 	{
 		printf(", %lu", k);
 		k += j;
