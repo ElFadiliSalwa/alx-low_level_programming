@@ -21,7 +21,7 @@ int main(void)
 	o = k % 1000000000;
 	for (i = 92; i < 99; ++i)
 	{
-		printf(", %lu", n  o / 1000000000);
+		printf(", %lu", n + (o / 1000000000));
 		printf("%lu", o % 1000000000);
 		n += l;
 		l = n - l;
