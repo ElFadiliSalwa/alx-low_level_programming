@@ -1,14 +1,14 @@
 #include<stdio.h>
 
 /**
- * main - prints the largest prime factor of the number
+ * main - prints the largest prime factor of a number
  *
- * Return: Always 0
+ * Return: 0
  */
+
 int main(void)
 {
-	long n = 612852475143;
-	int div = 2, max = 0;
+	long num = 612852475143, div = 2, max = 0;
 
 	while (n != 1)
 	{
