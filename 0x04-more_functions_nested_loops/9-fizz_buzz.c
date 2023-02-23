@@ -1,7 +1,7 @@
 #include<stdio.h>
 
 /**
- * main - prints number from 1 to 100 (Fizz for multiplies of 3, Buzz for multiplies of 5, FizzBuzz for both)
+ * main - fizz buzz test
  *
  * Return: Always 0
  */
