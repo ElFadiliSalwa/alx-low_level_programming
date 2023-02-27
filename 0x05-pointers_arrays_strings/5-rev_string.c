@@ -10,13 +10,13 @@ void rev_string(char *s)
 	int i, j;
 	char intermediaire;
 
-	for (i = _strlen(s) - 1; i > 0; i--)
+	for (i = 0; i < _strlen(s) -1; i++)
 	{
-		for (j = 0; j < i; j++)
+		for (j = _strlen(s) - 1; j > i; j--)
 		{
-			intermediaire = s[j];
-			s[j] = s[i];
-			s[i] = intermediaire;
+			intermediaire = s[i];
+			s[i] = s[j];
+			s[j] = intermediaire;
 		}
 	}
 }
