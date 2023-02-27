@@ -9,13 +9,13 @@ void rev_string(char *s)
 {
 	int i = 0, j = _strlen(s) - 1;
 	char intermediaire;
-	
+
 	while (i < j)
-        {
-                intermediaire = s[i];
-                s[i] = s[j];
-                s[j] = intermediaire;
-                i++;
-                j--;
-        }
+	{
+		intermediaire = s[i];
+		s[i] = s[j];
+		s[j] = intermediaire;
+		i++;
+		j--;
+	}
 }
