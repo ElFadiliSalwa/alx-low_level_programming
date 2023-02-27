@@ -8,7 +8,7 @@
 void rev_string(char *s)
 {
 	int i;
-	char intermediaire[_strlen(s)];
+	char intermediaire[_strlen(s) - 1];
 
 	for (i = _strlen(s) - 1; i >= 0; i--)
 		intermediaire[i] = s[i];
