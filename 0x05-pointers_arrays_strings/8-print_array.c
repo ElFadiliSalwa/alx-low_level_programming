@@ -12,7 +12,7 @@ void print_array(int *a, int n)
 
 	for (i = 0; i < _strlen(a); i++)
 	{
-		if (i != _strlen(a) - 1)
+		if (i != _strlen(a))
 			printf("%d, ", a[i]);
 		else
 			printf("%d\n", a[i]);
