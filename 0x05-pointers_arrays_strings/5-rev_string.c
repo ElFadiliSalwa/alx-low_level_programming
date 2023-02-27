@@ -7,9 +7,15 @@
  */
 void rev_string(char *s)
 {
-	int i;
-	char intermediaire[_strlen(s) - 1];
+	int i, j;
+	char intermediaire;
 
 	for (i = _strlen(s) - 1; i >= 0; i--)
-		intermediaire[i] = s[i];
+	{
+		for (j = 0; j < _strlen(s); j++)
+		{
+			intermediaire = s[i];
+			s[j] = intermediaire;
+		}
+	}
 }
