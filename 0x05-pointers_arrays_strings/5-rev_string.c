@@ -11,11 +11,11 @@ void rev_string(char *s)
 	char intermediaire;
 	
 	while (i < j)
-	{
-		intermediaire = s[i];
-		s[i] = s[j];
-		s[j] = intermediaire;
-		i++;
-		j--;
-	}
+        {
+                intermediaire = s[i];
+                s[i] = s[j];
+                s[j] = intermediaire;
+                i++;
+                j--;
+        }
 }
