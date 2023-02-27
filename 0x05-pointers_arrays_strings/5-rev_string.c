@@ -8,13 +8,15 @@
 void rev_string(char *s)
 {
 	int i, j;
-	char *intermediaire;
+	char intermediaire;
 
 	for (i = _strlen(s) - 1; i >= 0; i--)
 	{
-		for (j = 0; j < _strlen(s); j++)
+		for (j = 0; j < i; j++)
 		{
-			intermediaire[j] = s[i];
+			intermediaire = s[j];
+			s[j] = s[i];
+			s[i] = intermediaire;
 		}
 	}
 }
