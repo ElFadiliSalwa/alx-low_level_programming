@@ -10,7 +10,7 @@
  */
 char *_strcat(char *dest, char *src)
 {
-	long unsigned int i;
+	int i;
 
 	for (i = 0; i < strlen(src); i++)
 		dest[strlen(dest)] = src[i];
