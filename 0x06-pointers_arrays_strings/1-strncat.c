@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * _strncat - conatenates two strings
  * @dest: the destination
@@ -9,10 +10,12 @@
  */
 char *_strncat(char *dest, char *src, int n)
 {
-	int i;
+	int i, j;
 
-	for (i = 0; i < n; i++)
-		dest[strlen(dest)] = src[i];
-	dest[strlen(dest)] = '\0';
+	for (i = 0; dest[i] < '\0'; i++)
+	{}
+	for (j = 0; src[j] < n; j++)
+	       dest[i + j] = src[j];
+	dest[i + j] = '\0';
 	return (dest);
 }
