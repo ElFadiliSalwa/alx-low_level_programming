@@ -4,5 +4,6 @@
 #include<stdio.h>
 
 char *_strcat(char *dest, char *src);
+char *_strncat(char *dst, char *src, int n);
 
 #endif
