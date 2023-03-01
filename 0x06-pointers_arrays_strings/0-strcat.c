@@ -1,4 +1,6 @@
 #include "main.h"
+#include <string.h>
+
 /**
  * _strcat - concatenates two strings
  * @dest: the destination
@@ -8,7 +10,7 @@
  */
 char *_strcat(char *dest, char *src)
 {
-	int i;
+	long unsigned int i;
 
 	for (i = 0; i < strlen(src); i++)
 		dest[strlen(dest)] = src[i];
