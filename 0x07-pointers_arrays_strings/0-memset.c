@@ -5,6 +5,8 @@
  * @s: char
  * @b: the constant
  * @n: memory's nuber of bytes to be filled
+ *
+ * Return: char
  */
 
 char *_memset(char *s, char b, unsigned int n)
