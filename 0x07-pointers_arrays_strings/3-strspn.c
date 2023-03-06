@@ -10,15 +10,16 @@
 
 unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int n = 1;
+	unsigned int n, i = 0;
 
-	while (*s != '\0')
-	{
-		if (*accept != *s)
-			n++;
-		else
-			break;
-		s++;
-	}
-	return (n);
+        while (s[i] != '\0')
+        {
+                if (*accept == s[i])
+                {
+                        n = ++i;
+                        break;
+                }  
+                i++;
+        }
+        return (n);
 }
