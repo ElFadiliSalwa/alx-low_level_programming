@@ -3,15 +3,14 @@
 /**
  * _strstr - locates a substring
  * @haystack: the string to be scanned
- * @needle: the string to be searched within haystack
+ * @needle: the string to be searched
  * 
  * Return: pointer to char
  */
 
 char *_strstr(char *haystack, char *needle)
 {
-	char *tmp_haystack;
-	char *tmp_needle;
+	char *tmp_haystack, *tmp_needle;
 
 	while (*haystack)
 	{
