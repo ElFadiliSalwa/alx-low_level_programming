@@ -28,11 +28,11 @@ int is_palindrome(char *s)
 
 int test_palindrome(char *s, int i, int length)
 {
-        if (s[i] != s[length - 1])
-                return (0);
-        if (i >= length)
-                return (1);
-        return (test_palindrome(s, i + 1, length - 1));
+	if (s[i] != s[length - 1])
+		return (0);
+	if (i >= length)
+		return (1);
+	return (test_palindrome(s, i + 1, length - 1));
 }
 
 /**
