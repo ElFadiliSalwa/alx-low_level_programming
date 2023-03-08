@@ -11,5 +11,4 @@ void _puts_recursion(char *s)
 	s++;
 	if (*s)
 		_puts_recursion(s);
-	_putchar('\n');
 }
