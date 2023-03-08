@@ -36,8 +36,8 @@ int test_palindrome(char *s, int i, int length)
 }
 
 /**
- * _strlen_recursion - return the length of a string
- * @s: the string we want to calculate its length
+ * _strlen_recursion - returns the length of a string
+ * @s: the string
  *
  * Return: int
  */
@@ -52,6 +52,5 @@ int _strlen_recursion(char *s)
 		s++;
 		counter += _strlen_recursion(s);
 	}
-
 	return (counter);
 }
