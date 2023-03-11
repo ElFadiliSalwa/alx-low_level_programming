@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <ctype.h>
 #include <stdlib.h>
 
 /**
@@ -18,7 +17,7 @@ int main(int argc, char *argv [])
 	{
 		for (j = 0; argv[i][j]; j++)
 		{
-			if (isdigit(argv[i][j]) == 0)
+			if (argv[i][j] > '9' || argv[i][j] < '0')
 			{
 				printf("Error\n");
 				return (1);
