@@ -9,10 +9,10 @@
  * Return: pointer to a char
  */
 
-char *str_concat(char * s1, char *s2)
+char *str_concat(char *s1, char *s2)
 {
 	char *temp;
-	unsigned int i, j, k = 0;
+	unsigned int i, j, k = 0, l;
 
 	if (!s1)
 		s1 = "";
@@ -20,8 +20,10 @@ char *str_concat(char * s1, char *s2)
 	if (!s2)
 		s2 = "";
 
-	for (i = 0; s1[i]; i++);
-	for (j = 0; s2[j]; j++);
+	for (i = 0; s1[i]; i++)
+		;
+	for (j = 0; s2[j]; j++)
+		;
 
 	temp = malloc(sizeof(char) * (i + j + 1));
 	if (!temp)
@@ -32,8 +34,8 @@ char *str_concat(char * s1, char *s2)
 		temp[k] = s1[i];
 		k++;
 	}
-
-	for (i = 0; i <= j; k++, i++)
+	l = j;
+	for (j = 0; j <= l; k++, j++)
 		temp[k] = s2[j];
 
 	return (temp);
