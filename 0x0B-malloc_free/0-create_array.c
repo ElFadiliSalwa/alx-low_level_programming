@@ -12,16 +12,19 @@
 char *create_array(unsigned int size, char c)
 {
 	char *t;
+	int i = 0;
 
 	if (size == 0)
-		return (0);
+		return (NULL);
 
-	else
+	while (1)
 	{
 		t = malloc(size);
-		t[0] = c;
-		return (t);
+		if (t == NULL)
+			return (NULL);
+		t[i] = c;
+		i++;
 	}
 
-	return (0);
+	return (t);
 }
