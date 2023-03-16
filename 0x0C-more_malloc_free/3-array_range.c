@@ -6,7 +6,7 @@
  * @min: the minimum number
  * @max: the maximum number
  *
- * Return: int
+ * Return: array of integers
  */
 
 int *array_range(int min, int max)
@@ -16,7 +16,9 @@ int *array_range(int min, int max)
 	if (min > max)
 		return (NULL);
 	size = max - min + 1;
+
 	p = malloc(sizeof(int) * size);
+
 	if(p == NULL)
 		return (NULL);
 	for (i = 0; min <= max; i++)
