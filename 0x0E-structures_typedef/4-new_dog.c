@@ -17,7 +17,7 @@ int _strlen(char *s)
 
 /**
  * _strcpy - copies a string
- * @dst: the destination
+ * @dest: the destination
  * @src: the source
  *
  * Return: pointer to a char
