@@ -9,10 +9,10 @@
  */
 list_t *add_node(list_t **head, const char *str)
 {
-	unsigned int i, n = 0;
+	unsigned int n = 0;
 	list_t list;
 
-	for (i = 0; str[n]; i++)
+	while (str[n])
 		n++;
 
 	list = malloc(sizeof(list_t));
