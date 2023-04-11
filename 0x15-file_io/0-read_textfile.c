@@ -7,9 +7,10 @@
  *
  * Return: number of letters that could be read and printed
  */
-ssize read_textfile(const char *filename, size_t letters)
+ssize_t read_textfile(const char *filename, size_t letters)
 {
-	ssize_t fp, fr, fw;
+	FILE *fp;
+	ssize_t fr, fw;
 	char *c;
 
 	if (!filename)
@@ -22,7 +23,7 @@ ssize read_textfile(const char *filename, size_t letters)
 	fp = open(filename, O_RDONLY);
 	fr = read(fp, c, letters);
 	fw = write(STDOUT_FILENO, c, fr);
-	if (fp == -1 || fr == -1 || fw == -1 || fw != fr)
+	if (fp == -1 || fr == -1 || fw == -1)
 	{
 		free(c);
 		return (0);
