@@ -5,7 +5,7 @@
  * @filename: file's name
  * @letters: the number of letters to read and print
  *
- * Return: the actual number of letters that could be read and printed
+ * Return: number of letters that could be read and printed
  */
 ssize read_textfile(const char *filename, size_t letters)
 {
@@ -22,7 +22,7 @@ ssize read_textfile(const char *filename, size_t letters)
 	fp = open(filename, O_RDONLY);
 	fr = read(fp, c, letters);
 	fw = write(STDOUT_FILENO, c, fr);
-	if (fp == -1 || fr == -1 || fw == -1)
+	if (fp == -1 || fr == -1 || fw == -1 || fw != fr)
 	{
 		free(c);
 		return (0);
