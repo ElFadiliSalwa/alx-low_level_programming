@@ -43,7 +43,10 @@ int main(int argc, char *argv[])
 		}
 		size2 = write(file_to, buffer, size1);
 		if (size2 < size1)
-			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]), exit(99);
+		{
+			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
+			exit(99);
+		}
 	}
 
 	if (close(file_from) == -1)
